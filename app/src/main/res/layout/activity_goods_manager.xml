@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD1CACA"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/order_all_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_17sp" />
+
+            <TextView
+                android:id="@+id/text_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="right"
+                android:text="分类"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_17sp" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/shop_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="2dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/bg_color">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/goods_manager_pandian"
+                android:background="@drawable/edit_shap"
+                android:hint="请输入商品名称、拼音、数字..."
+                android:paddingLeft="10dp"
+                android:textColor="@color/textColor_black"
+                android:textColorHint="@color/foot_txt_gray"
+                android:textSize="@dimen/text_size_13sp" />
+
+            <Button
+                android:id="@+id/goods_manager_pandian"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_slold"
+                android:gravity="center"
+                android:text="商品盘点"
+                android:textColor="#F76B46"
+                android:textSize="@dimen/text_size_13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="总正库存"
+                    android:textColor="@color/foot_txt_gray"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="123"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="件，"
+                    android:textColor="@color/foot_txt_gray"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共成本"
+                    android:textColor="@color/foot_txt_gray"
+                    android:textSize="@dimen/text_size_13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="6980.78"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="@dimen/text_size_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/foot_txt_gray"
+                    android:textSize="@dimen/text_size_13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/goods_manager_wraimg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_wraing" />
+
+                <ImageView
+                    android:id="@+id/goods_manager_add"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/blue_add" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:id="@+id/order_all_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_progress="@layout/page_progress" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/supplier_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:background="@color/textColor_red"
+        android:clickable="true"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/main_activtiy_add_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="新增供应商"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16sp" />
+    </LinearLayout>
+</com.jude.fitsystemwindowlayout.FitSystemWindowsLinearLayout>

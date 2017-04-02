@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mykeyboard="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <net.school_a.app.widget.MyKeyboard
+        android:id="@+id/c_m_money"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="20dp"
+        android:hint="请输入销售金额"
+        mykeyboard:xml="@xml/amountinputkeyboard" />
+
+    <Button
+        android:id="@+id/c_m_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_login"
+        android:text="去结算"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18sp" />
+</LinearLayout>
