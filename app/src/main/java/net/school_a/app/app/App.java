@@ -67,7 +67,6 @@ public class App extends MultiDexApplication {
         //mob短信验证初始化
         SMSSDK.initSDK(this, "14359dfc08d04", "720a87f2ddcd958ab3b4d7b987b41f38");
         registerActivityLifecycleCallbacks(JActivityManager.getActivityLifecycleCallbacks());
-
     }
 
     private void initLocalUserData() {
